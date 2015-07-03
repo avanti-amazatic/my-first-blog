@@ -7,18 +7,28 @@
             <h1><a href="">Avanti's Blog</a></h1>
         </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Cinderella</a></h2>
-            <p>A widowed prince has a daughter, Zezolla (tonnie) (the Cinderella figure), who is tended by a beloved governess. The governess, with Zezolla's help, persuades the prince to marry her. The governess then brings forward two daughters of her own, who abuse Zezolla (tonnie), and send her into the kitchen to work as a servant. The prince goes to the island of Sinia, meets a fairy who gives presents to his daughter, and brings back for her: a golden spade, a golden bucket, a silken napkin, and a date seedling. The girl cultivates the tree, and when the king hosts a ball, Zezolla appears dressed richly by a fairy living in the date tree. The king falls in love with her, but Zezolla runs away before he can find out who she is. Twice Zezolla escapes the king and his servants. The third time, the king's servant captures one of her slippers. The king invites all of the maidens in the land to a feast with a shoe-test, identifies Zezolla (tonnie) after the shoe jumps from his hand to her foot, and eventually marries her.</p>
-        </div>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaks }}</p>
+            </div>
+        {% endfor %}
+        <!--{% for post in posts %}-->
+            <!--{{ post }}-->
+        <!--{% endfor %}-->
+        <!--<div>-->
+            <!--<p>published: 14.06.2014, 12:14</p>-->
+            <!--<h2><a href="">Cinderella</a></h2>-->
+            <!--<p>A widowed prince has a daughter, Zezolla (tonnie) (the Cinderella figure), who is tended by a beloved governess. The governess, with Zezolla's help, persuades the prince to marry her. The governess then brings forward two daughters of her own, who abuse Zezolla (tonnie), and send her into the kitchen to work as a servant. The prince goes to the island of Sinia, meets a fairy who gives presents to his daughter, and brings back for her: a golden spade, a golden bucket, a silken napkin, and a date seedling. The girl cultivates the tree, and when the king hosts a ball, Zezolla appears dressed richly by a fairy living in the date tree. The king falls in love with her, but Zezolla runs away before he can find out who she is. Twice Zezolla escapes the king and his servants. The third time, the king's servant captures one of her slippers. The king invites all of the maidens in the land to a feast with a shoe-test, identifies Zezolla (tonnie) after the shoe jumps from his hand to her foot, and eventually marries her.</p>-->
+        <!--</div>-->
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Rapunzel</a></h2>
-            <p>A lonely couple, who want a child, live next to a walled garden belonging to a witch (in some versions, a fairy), Dame Gothel. The wife, experiencing the cravings associated with the arrival of her long-awaited pregnancy, notices a rapunzel plant (or, in most translated-to-English versions[9] of the story, rampion), growing in the garden and longs for it, desperate to the point of death. One night, her husband breaks into the garden to get some for her. She makes a salad out of it and greedily eats it. It tastes so good that she longs for more. So her husband goes to get some for her a second time. As he scales the wall to return home, Dame Gothel catches him and accuses him of theft. He begs for mercy, and she agrees to be lenient, and allows him to take all he wants, on condition that the baby be given to her at birth. Desperate, he agrees. When the baby is born, Dame Gothel takes her to raise as her own and names her Rapunzel after the plant her mother craved. She grows up to be the most beautiful child in the world with long golden hair. When she reaches her twelfth year, Dame Gothel shuts her away in a tower in the middle of the woods, with neither stairs nor a door, and only one room and one window. When she visits her, she stands beneath the tower and calls out:
+        <!--<div>-->
+            <!--<p>published: 14.06.2014, 12:14</p>-->
+            <!--<h2><a href="">Rapunzel</a></h2>-->
+            <!--<p>A lonely couple, who want a child, live next to a walled garden belonging to a witch (in some versions, a fairy), Dame Gothel. The wife, experiencing the cravings associated with the arrival of her long-awaited pregnancy, notices a rapunzel plant (or, in most translated-to-English versions[9] of the story, rampion), growing in the garden and longs for it, desperate to the point of death. One night, her husband breaks into the garden to get some for her. She makes a salad out of it and greedily eats it. It tastes so good that she longs for more. So her husband goes to get some for her a second time. As he scales the wall to return home, Dame Gothel catches him and accuses him of theft. He begs for mercy, and she agrees to be lenient, and allows him to take all he wants, on condition that the baby be given to her at birth. Desperate, he agrees. When the baby is born, Dame Gothel takes her to raise as her own and names her Rapunzel after the plant her mother craved. She grows up to be the most beautiful child in the world with long golden hair. When she reaches her twelfth year, Dame Gothel shuts her away in a tower in the middle of the woods, with neither stairs nor a door, and only one room and one window. When she visits her, she stands beneath the tower and calls out:-->
 
-Rapunzel, Rapunzel, let down your hair, so that I may climb the golden stair.</p>
-        </div>
+<!--Rapunzel, Rapunzel, let down your hair, so that I may climb the golden stair.</p>-->
+        <!--</div>-->
     </body>
 </html>
